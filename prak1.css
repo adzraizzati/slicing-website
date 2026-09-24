@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbf8f3;
+    color: #29231f;
+}
+
+/* ================= NAVBAR ================= */
+header {
+    height: 70px;
+    padding: 0 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+    border-bottom: 1px solid #eee5dc;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #3b2a20;
+}
+
+.logo span {
+    color: #b9683d;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #b9683d;
+}
+
+.cart-btn {
+    background-color: #3b2a20;
+    color: white;
+
+    border: none;
+    border-radius: 20px;
+
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+/* ================= HERO ================= */
+.hero {
+    min-height: 560px;
+
+    padding: 80px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.hero-text {
+    max-width: 570px;
+}
+
+.opening {
+    color: #b9683d;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.1;
+
+    margin: 18px 0;
+}
+
+.hero h1 span {
+    color: #b9683d;
+}
+
+.description {
+    color: #777;
+    max-width: 500px;
+    line-height: 1.7;
+}
+
+/* ================= BUTTON ================= */
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 22px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.utama {
+    background-color: #b9683d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.kedua {
+    border: 1px solid #d7c9bd;
+    color: #4d443d;
+}
+
+/* ================= KARTU FAVORIT ================= */
+.favorite {
+    width: 350px;
+    height: 380px;
+
+    background-color: #d9b89d;
+
+    border-radius: 28px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 12px 15px 0 #eadfd4;
+}
+
+/* FOTO MENU FAVORIT */
+.coffee-image {
+    width: 210px;
+    height: 210px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+}
+
+.favorite p {
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.favorite h2 {
+    margin: 6px 0;
+}
+
+.favorite span {
+    color: #76503b;
+}
+
+/* ================= MENU ================= */
+.menu-section {
+    background-color: white;
+    padding: 80px 8%;
+}
+
+.judul p {
+    color: #b9683d;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.judul h2 {
+    font-size: 36px;
+    margin-top: 5px;
+}
+
+/* ================= FILTER ================= */
+.filter {
+    display: flex;
+    gap: 10px;
+
+    margin: 30px 0;
+
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 9px 18px;
+
+    background-color: white;
+
+    border: 1px solid #ddd2c7;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #3b2a20;
+    color: white;
+}
+
+/* ================= MENU CARD ================= */
+.menu-list {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.menu-card {
+    padding: 18px;
+
+    border: 1px solid #eee5dc;
+    border-radius: 15px;
+
+    background-color: #fffdfb;
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr auto auto;
+
+    gap: 14px;
+
+    align-items: center;
+}
+
+/* FOTO MENU */
+.menu-image {
+    width: 100px;
+    height: 100px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+.menu-card h3 {
+    font-size: 17px;
+}
+
+.menu-card p {
+    color: #858078;
+    font-size: 13px;
+
+    margin-top: 4px;
+}
+
+.menu-card strong {
+    color: #b9683d;
+    white-space: nowrap;
+}
+
+.order-btn {
+    background-color: #3b2a20;
+    color: white;
+
+    border: none;
+    border-radius: 7px;
+
+    padding: 8px 12px;
+
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    background-color: #b9683d;
+}
+
+/* ================= ABOUT ================= */
+.about {
+    padding: 90px 8%;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+.about-text {
+    max-width: 570px;
+}
+
+.about-text > p:first-child {
+    color: #b9683d;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.about h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.about-text > p:last-child {
+    color: #777;
+    line-height: 1.7;
+}
+
+/* ================= INFO ================= */
+.about-info {
+    display: grid;
+
+    grid-template-columns: repeat(3, 130px);
+
+    gap: 15px;
+}
+
+.about-info div {
+    background-color: #f1e5d9;
+
+    padding: 20px 10px;
+
+    border-radius: 12px;
+
+    text-align: center;
+}
+
+/* FOTO INFO */
+.info-image {
+    width: 55px;
+    height: 55px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    margin-bottom: 8px;
+}
+
+.about-info span {
+    display: block;
+    font-size: 12px;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+    padding: 70px 8%;
+
+    text-align: center;
+
+    background-color: #3b2a20;
+
+    color: white;
+}
+
+.contact > p:first-child {
+    color: #d69a72;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.contact h2 {
+    font-size: 38px;
+    margin: 8px 0;
+}
+
+.contact > p:nth-of-type(2) {
+    color: #d5cbc3;
+    margin-bottom: 25px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #29201b;
+
+    color: #aaa19a;
+
+    font-size: 12px;
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 850px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 5%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .favorite {
+        width: 100%;
+        max-width: 400px;
+
+        align-self: center;
+    }
+
+    .menu-section,
+    .about,
+    .contact {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .menu-list {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ================= HP ================= */
+@media (max-width: 520px) {
+
+    header {
+        height: 62px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .cart-btn {
+        padding: 8px 11px;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding-top: 55px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .favorite {
+        height: 350px;
+    }
+
+    .coffee-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .menu-card {
+        grid-template-columns: 70px 1fr;
+    }
+
+    .menu-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .menu-card strong,
+    .order-btn {
+        grid-column: 2;
+        justify-self: start;
+    }
+
+    .about-info {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+}
