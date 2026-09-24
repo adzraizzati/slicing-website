@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Senja</title>
+    <link rel="stylesheet" href="prak1.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">Cafe<span>Senja</span></div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">Tentang</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+
+        <button class="cart-btn" id="cartBtn">
+            Pesanan (<span id="cartCount">0</span>)
+        </button>
+    </header>
+
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+            <p class="opening">BUKA SETIAP HARI • 08.00 - 23.00</p>
+
+            <h1>
+                Temukan menu favoritmu
+                di <span>Cafe Senja.</span>
+            </h1>
+
+            <p class="description">
+                Tempat nyaman untuk menikmati senja, mengerjakan tugas,
+                atau ngobrol santai bersama teman.
+            </p>
+
+            <div class="buttons">
+                <a href="#menu" class="btn utama">Lihat Menu</a>
+                <a href="#about" class="btn kedua">Tentang Kami</a>
+            </div>
+        </div>
+
+
+        <!-- MENU FAVORIT -->
+        <div class="favorite">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2pXYgsIfCEGS3LELUbh56LFVvv9HN907axxjoqOSkA&s=10"
+                 alt="Caramel Latte"
+                 class="coffee-image">
+
+            <p>MENU FAVORIT</p>
+            <h2>Caramel Latte</h2>
+            <span>Rp 22.000</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="menu-section" id="menu">
+
+        <div class="judul">
+            <p>MENU KAMI</p>
+            <h2>Pilih teman ngopimu</h2>
+        </div>
+
+
+        <!-- FILTER -->
+        <div class="filter">
+
+            <button class="filter-btn active" data-category="all">
+                Semua
+            </button>
+
+            <button class="filter-btn" data-category="coffee">
+                Coffee
+            </button>
+
+            <button class="filter-btn" data-category="noncoffee">
+                Non-Coffee
+            </button>
+
+            <button class="filter-btn" data-category="snack">
+                Snack
+            </button>
+
+        </div>
+
+
+        <!-- DAFTAR MENU -->
+        <div class="menu-list">
+
+
+            <!-- AMERICANO -->
+            <div class="menu-card" data-category="coffee">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3EZWpBJ6SvtCN7oDlAZxDnXqjwVzfB_S9GIzGIxXKKQ&s=10"
+                     alt="Americano"
+                     class="menu-image">
+
+                <div>
+                    <h3>Americano</h3>
+                    <p>Kopi dengan rasa ringan dan menyegarkan.</p>
+                </div>
+
+                <strong>Rp 18.000</strong>
+
+                <button class="order-btn">Tambah</button>
+
+            </div>
+
+
+            <!-- CARAMEL LATTE -->
+            <div class="menu-card" data-category="coffee">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF2pXYgsIfCEGS3LELUbh56LFVvv9HN907axxjoqOSkA&s=10"
+                     alt="Caramel Latte"
+                     class="menu-image">
+
+                <div>
+                    <h3>Caramel Latte</h3>
+                    <p>Latte creamy dengan rasa caramel.</p>
+                </div>
+
+                <strong>Rp 22.000</strong>
+
+                <button class="order-btn">Tambah</button>
+
+            </div>
+
+
+            <!-- MATCHA LATTE -->
+            <div class="menu-card" data-category="noncoffee">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNPgw3hfvC-Yto8vHtW4Ezk-qvRNhiUW4XuAybNzAzOw&s=10"
+                     alt="Matcha Latte"
+                     class="menu-image">
+
+                <div>
+                    <h3>Matcha Latte</h3>
+                    <p>Matcha lembut dengan susu yang creamy.</p>
+                </div>
+
+                <strong>Rp 21.000</strong>
+
+                <button class="order-btn">Tambah</button>
+
+            </div>
+
+
+            <!-- CHOCOLATE -->
+            <div class="menu-card" data-category="noncoffee">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnj1V2DYyd1Te8OXXgiNjnPx1EQ5aqlXTfqNRSsskjNw&s=10"
+                     class="menu-image">
+
+                <div>
+                    <h3>Chocolate</h3>
+                    <p>Minuman cokelat untuk menemani santai.</p>
+                </div>
+
+                <strong>Rp 20.000</strong>
+
+                <button class="order-btn">Tambah</button>
+
+            </div>
+
+
+            <!-- CROISSANT -->
+            <div class="menu-card" data-category="snack">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Uar-NWc3WuZT8uGHKpZHwW-efvoyzQlNC78LDd9Fvg&s=10"
+                     alt="Butter Croissant"
+                     class="menu-image">
+
+                <div>
+                    <h3>Tiramisu Croissant</h3>
+                    <p>Croissant renyah dengan perpaduan tiramisu.</p>
+                </div>
+
+                <strong>Rp 16.000</strong>
+
+                <button class="order-btn">Tambah</button>
+
+            </div>
+
+
+            <!-- FRENCH FRIES -->
+            <div class="menu-card" data-category="snack">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA3qmw11ZlukQ4oxq6RwzvEswlQSaSDH85wn-xuS9QJw&s=10"
+                     alt="French Fries"
+                     class="menu-image">
+
+                <div>
+                    <h3>French Fries</h3>
+                    <p>Kentang goreng gurih dengan cocolan saos.</p>
+                </div>
+
+                <strong>Rp 15.000</strong>
+
+                <button class="order-btn">Tambah</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TENTANG -->
+    <section class="about" id="about">
+
+        <div class="about-text">
+
+            <p>KENAPA CAFE SENJA?</p>
+
+            <h2>
+                Bukan cuma tempat minum kopi.
+            </h2>
+
+            <p>
+                Kami menyediakan tempat yang nyaman untuk bertemu teman,
+                mengerjakan tugas, atau sekadar menikmati waktu sendiri.
+            </p>
+
+        </div>
+
+
+        <!-- INFORMASI -->
+        <div class="about-info">
+
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvwJIKtWUXL-DkYy0Pem_Q37wEZrgxK2OOca2H42xiqA&s=10"
+                     alt="Senja"
+                     class="info-image">
+
+                <span>View senja</span>
+            </div>
+
+
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz-elz4V_Mtnt9J6FPXvP9m1V8rCx_GDSDaiuROYvUPA&s=10"
+                     alt="Free Wi-Fi"
+                     class="info-image">
+
+                <span>Free Wi-Fi</span>
+            </div>
+
+
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJCGou2R7jzKts07v_7lZX_GeWuhLYO59vYSjexRswlA&s=10"
+                     alt="Colokan"
+                     class="info-image">
+
+                <span>Colokan</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- KONTAK -->
+    <section class="contact" id="contact">
+
+        <p>MAU DATANG?</p>
+
+        <h2>Yuk, ngopi bareng kami.</h2>
+
+        <p>
+            Jl. Senja No. 10 • Buka 08.00 - 22.00
+        </p>
+
+        <button class="btn utama" id="contactBtn">
+            Hubungi Cafe
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Cafe Senja</p>
+    </footer>
+
+
+    <script src="prak1.js"></script>
+
+</body>
+</html>
